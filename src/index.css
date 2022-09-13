@@ -1,13 +1,98 @@
 body {
+  padding: 20px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(26, 26, 26);
+  color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.main-body {
+  /* background: rgb(33, 33, 33); */
+  background-color: blueviolet;
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+  border-radius: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.dice-container{
+  /* background: purple; */
+  display: grid;
+  grid-template: auto auto/ repeat(5, 1fr);
+  gap: 20px ;
+
+}
+
+.die-face {
+  background-color: rgb(212, 212, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  box-shadow:0px 2px 2px rgba(255, 255, 255, 0.514) ;
+}
+
+.die-num {
+  font-size: 1.5rem;
+  color: black;
+  font-family: sans-serif;
+}
+
+@media (max-width: 550px) {
+  .dice-container{
+    /* background-color: blueviolet; */
+    /* display: none; */
+    display: grid;
+    grid-template: auto auto/ repeat(3, 1fr);
+    gap: 20px ;
+  
+  }
+}
+
+.roll-button {
+  /* position: relative;
+  top: 90px; */
+  /* bottom: 20px; */
+  width: 140px;
+  height: 40px;
+  padding: 3px;
+  align-self: center;
+  background-color: rgba(0, 255, 0, 0.89);
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  border: none;
+  box-shadow:0px 2px 2px rgba(255, 255, 255, 0.514);
+  cursor: pointer;
+  transition: all 1.3s linear;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.roll-button:focus {
+  outline: none;
+}
+
+.roll-button:active{
+  box-shadow:inset 5px 5px 10px -3px rgba(0, 0, 0, 0.8);
 }
