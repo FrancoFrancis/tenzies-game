@@ -77,7 +77,7 @@ export default function App(props) {
 
     <main className="main-body">
       {tenzies && <Confetti />}
-      <h1 className="title">Tenzies 🎲🎲</h1>
+      <h1 className="title"><p>Franco's <p/> Tenzies 🎲🎲</h1>
       <p className="description"> Roll untill all dice are the same. Click each dice to save it 
       as its current value between rolls
 
